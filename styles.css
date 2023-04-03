@@ -1,0 +1,853 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    
+
+}
+
+
+header {
+    color: #fff;
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 1103.41px;
+    height: 29.46px;
+    left: 171.59px;
+    top: 35.02px;
+}
+
+
+
+
+header .img {
+    position: absolute;
+    width: 38.57px;
+    left: 171.59px;
+    top: 35.02px;
+    height: 40px;
+}
+
+header .logo {
+    position: absolute;
+    width: 125.83px;
+    height: 45px;
+    left: 225.16px;
+    top: 35.54px;
+
+}
+   
+
+.header_section {
+    background-image: url(/images/pic_1.jpg);
+    position: absolute;
+    height: 1093px;  
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    top: 0;
+}
+
+.nav_links a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+.nav_links {
+    width: 234px;
+    height: 15px;
+    left: 1041px;
+    top: 37px;  
+    list-style: none;
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    color: #fff;
+    position: absolute;
+}
+
+.nav_links li a{
+    margin-right: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.get_schooled h1 {
+    position: absolute;
+    height: 151px;
+    left: 26.18%;
+    right: 26.32%;
+    top: calc(50% - 151px/2 - 251px);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 151px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 20px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    white-space: nowrap;
+}
+
+.get_schooled p {
+    position: absolute;
+    height: 20px;
+    left: 48.89%;
+    right: 48.61%;
+    top: calc(50% - 20px/2 - 85.5px);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 20px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    white-space: nowrap;
+    word-spacing: 35px;
+
+    
+}
+
+.get_schooled button {
+    position: absolute;
+    left: 44.38%;
+    right: 44.38%;
+    top: calc(50% - 40px/2 - 20px);
+    width: 200px;
+    height: 40px;
+    background: #c271ff;
+    filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5));
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    border-radius: 22px;
+    border: none;
+}
+
+
+.header_section h2 {
+    position: absolute;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #fff;
+    height: 40px;
+    left: 39.94%;
+    right: 39.93%;
+    top: 621px;
+    font-style: normal;
+    text-align: center;
+    text-shadow: 0 0 20px rgba(0,0,0,0.5);
+    white-space: nowrap;
+
+}
+
+.header_section h2 span {
+    color: #c271ff;
+}
+
+.the_pros {
+  position: absolute;
+  width: 1009px;
+  height: 237px;
+  left: 20%;
+  top: 758px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+    
+}
+
+.the_pros img {
+    position: absolute;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    top: 10%;
+}
+
+.the_pros p {
+    position: absolute;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 24px;
+    width: 150px;
+    text-align: center;
+    height: 48px;
+    top: 200px;
+    color: #fff;
+
+
+}
+
+.the_pros h3 {
+    position: absolute;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 27px;
+    width: 150px;
+    text-align: center;
+    top: 170px;
+    white-space: nowrap;
+    color: #fff;
+}
+
+.testimonials {
+    position: absolute;
+    width: 100%;
+    height: 392px;
+    left: -1px;
+    top: 1093px;
+    background-color: #c271ff;
+}
+
+.testi {
+    position: absolute;
+    width: 100%;
+    height: 392px;
+    left: 0px;
+    top: 0px;
+    background-color: #c271ff;
+    display: flex;
+    justify-content: center;
+}
+
+.testi img {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    left: 25%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.testi blockquote {
+    position: absolute;
+    width: 730px;
+    height: 68px;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 34px;
+    text-align: center;
+    color: #fff;
+}
+
+.testi .name {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    left: 35%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 20px;
+    color: #fff;
+    top: 280px;
+}
+
+.testi .sub {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    left: 35%;
+    top: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 34px;
+    color: #fff;
+    top: 310px;
+    font-style: italic;
+}
+
+/** Tutorials **/
+
+.tutorials {
+    position: absolute;
+    width: 1440px;
+    height: 420px;
+    left: 0px;
+    
+
+    
+}
+
+
+.container {
+    position: absolute;
+    width: 1550px;
+    height: 450px;
+    left: 106px;
+    top: 1572px;
+    
+
+}
+
+.container h1 {
+    position: absolute;
+    height: 40px;
+    left: 40.25%;
+    right: 36.81%;
+    top: calc(50% - 40px/2 - 205px);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    color: #071629;
+    white-space: nowrap;
+}
+
+.container span {
+    color: #c271ff;
+}
+
+
+ .tutorials .tuto_1 {
+    position: absolute;
+    left: 4.72%;
+    right: 74.72%;
+    top: 25%;
+    width: 255px;
+    height: 350px;
+}
+
+.tutorials .tuto_2 {
+    position: absolute;
+    left: 29.72%;
+    right: 49.72%;
+    top: 25%;
+    width: 255px;
+    height: 350px;
+}
+
+.tutorials .tuto_3 {
+    position: absolute;
+    left: 54.72%;
+    right: 24.72%;
+    top: 25%;
+    width: 255px;
+    height: 350px;
+}
+
+.tutorials .tuto_4 {
+    position: absolute;
+    left: 79.72%;
+    right: 0%;
+    top: 25%;
+    width: 255px;
+    height: 350px;
+}
+
+
+.thumbnail {
+    position: absolute;
+    width: 255px;
+    height: 154px;
+    left: 0%;
+    top: 0%;
+}
+
+.playbutton {
+    position: absolute;
+    mix-blend-mode: normal;
+    opacity: 0.86;
+    width: 64px;
+    height: 64px;
+    left: 96px;
+    top: 45px;
+}
+
+.container h2 {
+    position: absolute;
+    height: 20px;
+    left: 5.1%;
+    right: 53.33%;
+    top: calc(50% - 20px/2 - 10.5px);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 20px;
+    text-align: center;
+    color: #071629;
+    white-space: nowrap;
+}
+
+.container p { 
+    position: absolute;
+    height: 48px;
+    left: 5.1%;
+    right: 0%;
+    top: 55%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(7, 22, 41, 0.501584);
+}
+
+.author img {
+    position: absolute;
+    left: 5.1%;
+    right: 83.14%;
+    top: 82.91%;
+    bottom: 13.13%;
+    width: 30px;
+    border-radius: 50%;
+}
+
+
+.author h3 {
+    position: absolute;
+    height: 27px;
+    left: 21.96%;
+    right: 44.31%;
+    top: 79.91%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+    color: #c271ff;
+    white-space: nowrap;
+}
+
+
+.rating .star_rating {
+    position: absolute;
+    left: 2px;
+    top: 340px;
+    padding-bottom:  100px;
+    white-space: nowrap;
+}
+
+.rating .star_rating  img {
+    width: 20px;
+    height: 20px;
+}
+
+.rating p {
+    position: absolute;
+    height: 27px;
+    left: 78.04%;
+    right: 8.63%;
+    top: 92.89%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #c271ff;
+    text-align: right;
+    white-space: nowrap;
+}
+
+
+/** Membership **/
+
+.membership {
+    position:absolute;
+    width: 100%;
+    height: 702px;
+    left: 0%;
+    right: 0%;
+    top: 2109px;
+    background: #071629;
+}
+
+.membership h1 {
+    position: absolute;
+    height: 40px;
+    left: 40.25%;
+    right: 36.81%;
+    top: 15%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.membership span {
+    color: #c271ff;
+}
+
+.membership .dot_1 {
+    position: absolute;
+    left: 11.39%;
+    right: 78.76%;
+    top: 36%;
+    bottom: 36.06%;
+}
+
+.membership .dot_2 {
+    position: absolute;
+    left: 36.39%;
+    right: 40.76%;
+    top: 36%;
+    bottom: 36.06%;
+}
+
+.membership .dot_3 {
+    position: absolute;
+    left: 61.39%;
+    right: 15.76%;
+    top: 36%;
+    bottom: 36.06%;
+}
+
+.membership .dot_4 {
+    position: absolute;
+    left: 86.39%;
+    right: 0%;
+    top: 36%;
+    bottom: 36.06%;
+}
+
+
+.membership h2 {
+    position: absolute;
+    height: 26px;
+    left: -8%;
+    top: 50%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.dot_1 p {
+    position: absolute;
+    height: 26px;
+    width: 230px;
+    left: -25%;
+    right: 0%;
+    top: 70%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+}
+
+.dot_2 p {
+    position: absolute;
+    height: 26px;
+    width: 230px;
+    left: -15%;
+    right: 0%;
+    top: 70%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+}
+
+.dot_3 p {
+    position: absolute;
+    height: 26px;
+    width: 230px;
+    left: -15%;
+    right: 0%;
+    top: 70%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+}
+
+.dot_4 p {
+    position: absolute;
+    height: 26px;
+    width: 230px;
+    left: -20%;
+    right: 0%;
+    top: 70%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+}
+
+.membership button {
+    position: absolute;
+    width: 225px;
+    height: 50px;
+    left: 45.25%;
+    right: 36.81%;
+    top: 80%;
+    background: #c271ff;
+    border-radius: 20px;
+    border: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+/** FAQ **/
+
+.faq {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    left: 0%;
+    right: 0%;
+    top: 2600px;
+    padding-bottom: 200px;
+}
+
+.faq h1 {
+    position: absolute;
+    height: 75px;
+    left: 40.25%;
+    right: 36.81%;
+    top: 70%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 75px;
+    text-align: center;
+    color: #071629;
+}
+
+.faq .container {
+    position: absolute;
+    width: 75%;
+    left: 0%;
+    right: 0%;
+    top: 268px;
+
+}
+
+.q1 p {
+    position: absolute;
+    height: 192px;
+    left: 25%;
+    right: 0%;
+    top: calc(50% - 102px/2 + 25px);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(7, 22, 41, 0.501584);
+    width: 350px;
+}
+
+.q2 p {
+    position: absolute;
+    height: 192px;
+    left: 85%;
+    right: 0%;
+    top: calc(50% - 102px/2 + 25px);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(7, 22, 41, 0.501584);
+    width: 350px;
+}
+
+.q3 p {
+    position: absolute;
+    height: 192px;
+    left: 25%;
+    right: 0%;
+    top: 125%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(7, 22, 41, 0.501584);
+    width: 350px;
+    padding-bottom: 100px;
+}
+
+.q4 p {
+    position: absolute;
+    height: 192px;
+    left: 85%;
+    right: 0%;
+    top: 125%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(7, 22, 41, 0.501584);
+    width: 350px;
+    padding-bottom: 100px;
+}
+
+.q1 h2 {
+    position: absolute;
+    height: 20px;
+    left: 0%;
+    right: 34.57%;
+    top: calc(50% - 20px/2 - 102px/2);
+}
+
+.q2 h2 {
+    position: absolute;
+    height: 20px;
+    left: 85%;
+    right: 0%;
+    top: calc(50% - 20px/2 - 102px/2);
+}
+
+.q3 h2 {
+    position: absolute;
+    height: 20px;
+    left: 0%;
+    right: 34.57%;
+    top: 115%;
+    }
+
+.q4 h2 {
+    position: absolute;
+    height: 20px;
+    left: 85%;
+    right: 0%;
+    top: 115%;
+}
+
+
+
+
+/** Footer **/
+
+footer {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    left: 0%;
+    right: 0%;
+    top: 3800px;
+    background: #071629;
+}
+
+
+
+footer .logo {
+    position: absolute;
+    left: 11.46%;
+    right: 76%;
+    top: 40%;
+    width: 100px;
+}
+
+footer .logo img {
+    position: absolute;
+    left: -30%;
+    top: 20%;
+    width: 50px;
+    border: none;
+}
+
+footer h1{
+    position: absolute;
+    height: 20px;
+    left: 32.54%;
+    right: 0%;
+    font-family: "Coiny";
+    font-style: normal;
+    font-weight: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 20px;
+    color: #fff;
+}
+
+footer .social_icons {
+    position: absolute;
+    width: 130px;
+    height: 50px;
+    left: 1200px;
+    top: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_block p {
+    position: absolute;
+    height: 20px;
+    left: 46.54%;
+    right: 0%;
+    top: 180px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    opacity: 0.35;
+}
+
+
+
