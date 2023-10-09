@@ -11,7 +11,9 @@
 }
 
 
-
+.wrapper {
+    width: 90%;
+}
 
 
 .Profile {
@@ -25,6 +27,7 @@
     height: 215px;
     left: 548px;
     top: 178px;
+    margin: 0 auto;
 }
 
 .Profile h1 {
@@ -73,8 +76,8 @@
     padding: 0px;
     gap: 26px;
     position: absolute;
-    width: 222px;
-    height: 40px;
+    width: 300px;
+    height: 55px;
     left: 300px;
     top: 117px;
 }
@@ -106,23 +109,22 @@
 }
 
 .button1 {
-    position: absolute;
-    width: 290px;
     height: 80px;
     right: 1000px;
-    top: 600px;
     font-size: 15px;
     font-family: var(--font-family);
+    float: left;
+    width: 50%;
 }
 
 .button2{
-    position: absolute;
-    width: 290px;
     height: 80px;
     right: 700px;
     top: 600px;
     font-size: 15px;
     font-family: var(--font-family);
+    float: left;
+    width: 50%;
 }
 
 button:hover {
@@ -141,6 +143,7 @@ button:hover {
     top: 785px;
 }
 
+
 .projects {
     display: flex;
     flex-direction: row;
@@ -153,6 +156,7 @@ button:hover {
     left: 26%;
     position: absolute;
     top: 950px;
+    margin: 0 auto;
 }
 
 .project {
