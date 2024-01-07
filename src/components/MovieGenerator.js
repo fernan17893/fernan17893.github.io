@@ -11,13 +11,13 @@ import '../index.css';
 
 function MovieGenerator() {
   const [movieData, setMovieData] = useState({
-    title: 'The Mask',
-    genre: 'Action, Comedy, Crime',
-    year: 1994,
-    actors: 'Jim Carrey, Cameron Diaz, Peter Rieger',
+    title: "Click 'Generate' to get a random movie!",
+    genre: '',
+    year: '',
+    actors: '',
     plot:
-      "Timid bank clerk, Stanley Ipkiss (Jim Carrey). Unfortunately, he's too gentle, and is unable to handle confrontations. After one of the worst days, he finds a mask which depicts Loki, the Norse god of mischief.",
-    runtime: '3 min',
+      "",
+    runtime: '',
     poster: defaultPoster,
   });
 
