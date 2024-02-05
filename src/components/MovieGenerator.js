@@ -11,12 +11,11 @@ import '../index.css';
 
 function MovieGenerator() {
   const [movieData, setMovieData] = useState({
-    title: "Click 'Generate' to get a random movie!",
-    genre: '',
-    year: '',
-    actors: '',
-    plot:
-      "",
+    title: <strong>Welcome to Rando!</strong>,
+    genre: `• Click on Generate to get started!`,
+    year: `• Use the filter button to filter by genre`,
+    actors: `• Click on the movie poster to go to the movie IMDB page`,
+    plot: `• Click on the page title to log out and return to the login page`,
     runtime: '',
     poster: defaultPoster,
   });
@@ -114,31 +113,28 @@ function MovieGenerator() {
 
 
   return (
-    <div className="container">
-      <div className="header">
-        <h1>RANDO: A MOVIE GENERATOR</h1>
-        <button className="logout-button" onClick={handleLogout}>
-          Logout
-        </button>
-        <MoviePoster poster={movieData.poster} title={movieData.title} imdbId={movieData.imdbId} />
-      </div>
-      <button className="button" onClick={generate} disabled={isLoading}>
-        {isLoading ? <LoadingSpinner /> : 'Generate'}
-      </button>
-      <GenreFilter onSelectGenre={handleGenreSelect} />
-      <div className="content">
-        <div className="content-left">
-          <MovieDetails
-            title={movieData.title}
-            genre={movieData.genre}
-            year={movieData.year}
-            actors={movieData.actors}
-            plot={movieData.plot}
-            runtime={movieData.runtime}
-          />
-        </div>
-      </div>
+      <><div className="header" onClick={handleLogout}>
+      <h1>RANDO: A MOVIE GENERATOR</h1>
     </div>
+    <div className="container">
+        <MoviePoster poster={movieData.poster} title={movieData.title} imdbId={movieData.imdbId} />
+        <div className="content">
+        <button className="button" id='generateButton' onClick={generate} disabled={isLoading}>
+          {isLoading ? <LoadingSpinner /> : 'Generate'}
+        </button>
+        <GenreFilter id='genreFilterButton' onSelectGenre={handleGenreSelect} />
+          <div className="content-left">
+            <MovieDetails
+              title={movieData.title}
+              genre={movieData.genre}
+              year={movieData.year}
+              actors={movieData.actors}
+              plot={movieData.plot}
+              runtime={movieData.runtime} />
+          </div>
+        </div>
+
+      </div></>
   );
 }
 
