@@ -9,23 +9,36 @@ body {
   background-color: #f1eeec;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Make sure the body covers at least the full viewport height */
+  min-height: 100vh; 
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .container {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   padding: 50px;
   margin: 0 auto;
   max-width: 1500px;
   min-width: 100vh;
-  flex: 1; /* Expand to fill the available vertical space */
+  flex: 1; 
+  border: #222;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .header {
   font-family: LimeLight;
   font-size: 15px;
+  font-weight: 800;
+  color: #222;
+  position: relative;
+  top: 6vh;
+  margin-bottom: 50px;
+  margin-left: 10%;
+  cursor: pointer;
 }
 
 /* Login.css */
@@ -129,12 +142,9 @@ button {
   display: flex;
   flex-direction: column;
   flex: 1;
-  margin-left: 20px;
-  margin-right: 20px;
   position: relative;
-  top: 5vh;
-  right: 5vh;
   align-items: flex-start;
+  margin-top: 100px;
 }
 
 .content-left {
@@ -144,9 +154,10 @@ button {
   margin-left: 20px;
   margin-right: 20px;
   position: relative;
-  top: 2vh;
-  right: 5vh;
+  top: 3vh;
   align-items: flex-start;
+  justify-content: flex-start;
+  max-width: calc(100% - 300px);
 }
 
 
@@ -156,16 +167,18 @@ button {
   background-color: #222;
   color: #fff;
   border: none;
-  padding: 22px 30px;
+  padding: 25px 32px;
   border-radius: 5px;
   font-family: sans-serif;
   font-weight: bold;
   cursor: pointer;
-  right: 5vh;
-
-  /* Visual enhancements */
-  position: relative; /* Position the button within the container */
+  right: 10vh;
   overflow: hidden;
+  position: absolute;
+  top: 9.8vh;
+  width: 150px;
+  height: 70px;
+
 
   /* Play icon integration */
   &::before {
@@ -176,8 +189,8 @@ button {
     transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
-    background-image: url("https://www.friidesigns.com/wp-content/uploads/2018/11/white-play-icon-png-6.png"); /* Replace with your icon URL */
-    background-size: 50%; /* Adjust icon size as needed */
+    background-image: url("https://www.friidesigns.com/wp-content/uploads/2018/11/white-play-icon-png-6.png"); /* Play Icon on Generate Button */
+    background-size: 50%; 
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0.2;
@@ -191,27 +204,21 @@ button {
     }
   }
 
-  /* Preserved styling from original .button class */
-  margin-bottom: 20px;
-  margin-left: 150px;
-  outline: none;
-  transition: background-color 0.3s ease-in-out;
-  float: right;
+ 
 }
 
 .logout-button {
-  background-color: #222;
+    background-color: #222;
   color: #fff;
   border: none;
-
   border-radius: 5px;
   font-family: sans-serif;
   font-weight: 600;
   cursor: pointer;
-  position: absolute; /* Position the button absolutely within the container */
-  top: 10vh;
-  right: 30vh;
-  outline: none; 
+  position: absolute;
+  top:9.8vh; /* Adjust the top position as needed */
+  right: 22vh; /* Position the logout button to the right */
+  outline: none;
 }
 
 
@@ -220,15 +227,17 @@ button {
 /* GenreFilter.css */
 .genre-filter {
   align-items: center;
-  margin-right: 20px;
   margin-bottom: 20px;
   position: absolute;
-  top: 8vh;
-  right: 40vh;
+  top: 19vh;
+  right: 11.6vh;
   margin-top: 20px;
-  
  
 
+}
+
+.genre-filter.hidden {
+  display: none;
 }
 
 .genre-filter label {
@@ -268,20 +277,21 @@ button {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   flex: 1;
-  margin-right: 20px;
-  margin-left: 100px;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  
-
+  margin-right: auto;
+  margin-left: 20px;
+  width: 90%;
+  height: 120%;
+  overflow-y: scroll;
+  position: relative;
+  bottom: 5vh;
 }
+
 
 .movie-title {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 10px;
+  align-self: center;
 }
 
 .movie-genre,
@@ -297,9 +307,15 @@ button {
 /* Footer styling */
 
 .footer{
-  position: fixed;
-  margin-top: auto;
-  right: 30vh;
+  margin-top: 50px;
+  bottom: 15vh;
+  position: relative;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  width: 100%;
+  left: 40vh;
+
 }
 
 .footer p {
@@ -318,44 +334,66 @@ button {
 /* Responsive Styles  WORK IN PROGRESS UNFINISHED */
   /* Responsive Styles */
 @media (max-width: 812px) {
-  .container {
+  .body {
     flex-direction: column;
-    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
   }
 
-  .header h1 {
-    display: none;
-  }
-
-  .poster {
+  .header {
+    margin-left: 0;
     margin-bottom: 20px;
-    max-width: 350px;
-    min-width: 350px;
-  }
-
-  .poster img {
-    max-width: 100%;
-    border-radius: 8px;
-    transition: transform 0.3s ease-in-out;
-    outline-style: ridge;
-    outline-color: #222;
-  }
-
-  .genre-filter {
-    margin-bottom: 20px;
-    position: relative;
-    left: 0;
-    bottom: 0;
-    width: 100%;
     text-align: center;
   }
-
-  .result-area {
-    max-width: 100%;
-    height: 50%;
+  .header h1 {
+    font-size: 20px;
+    
   }
 
-  .footer {
-    right: 0;
-  }
+  .container {
+  max-width: 20%; 
+  min-width: 72%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.poster {
+  min-width: 88%;
+  top: 20vh;
+  right: 10vh;
+
+}
+
+.poster img {
+  min-width: 88%;
+  align-items: center;
+ 
+}
+
+
+.button{ 
+  top: 65vh;
+  position: fixed;
+  right: 15vh;
+}
+
+.genre-filter {
+  top: 74vh;
+  right: 17.5vh;
+  position: fixed;
+}
+
+.content-left {
+  max-width: 20%;
+  min-width: 20%;
+  margin-left: 0;
+  margin-right: 0;
+  right: 35vh;
+  top: 50vh;
+  
+}
 }
