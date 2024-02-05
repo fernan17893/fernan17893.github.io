@@ -1,0 +1,399 @@
+@font-face {
+  font-family: LimeLight;
+  src: url('./fonts/Limelight-1XzM.ttf');
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 10px;
+  background-color: #f1eeec;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  margin: 0 auto;
+  max-width: 1500px;
+  min-width: 100vh;
+  flex: 1; 
+  border: #222;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  font-family: LimeLight;
+  font-size: 15px;
+  font-weight: 800;
+  color: #222;
+  position: relative;
+  top: 6vh;
+  margin-bottom: 50px;
+  margin-left: 10%;
+  cursor: pointer;
+}
+
+/* Login.css */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  background-image: url('./assets/HomepagePosters.jpg');
+}
+
+.login-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 400px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-family: LimeLight;
+  font-weight: 800;
+  font-size: 32px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #222;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+
+}
+
+.toggle-mode {
+  color: #333;
+  cursor: pointer;
+}
+
+/* Additional styles for signup mode */
+.signup-mode .login-box {
+  max-width: 400px;
+}
+
+.signup-button {
+  background-color:#222;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .login-box {
+    width: 80%;
+  }
+}
+
+
+
+
+
+/* Poster styling */
+.poster {
+  margin-right: 20px;
+  max-width: 3000px;
+  min-width: 500px;
+  
+}
+
+.poster img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+  outline-style: ridge;
+  
+  outline-color: #222;
+}
+
+.poster img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* Content styling */
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+  align-items: flex-start;
+  margin-top: 100px;
+}
+
+.content-left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+  top: 3vh;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: calc(100% - 300px);
+}
+
+
+/*Buttons */
+.button {
+  /* Basic styling */
+  background-color: #222;
+  color: #fff;
+  border: none;
+  padding: 25px 32px;
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  right: 10vh;
+  overflow: hidden;
+  position: absolute;
+  top: 9.8vh;
+  width: 150px;
+  height: 70px;
+
+
+  /* Play icon integration */
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-image: url("https://www.friidesigns.com/wp-content/uploads/2018/11/white-play-icon-png-6.png"); /* Play Icon on Generate Button */
+    background-size: 50%; 
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.2;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  /* Hover effect */
+  &:hover {
+    &::before {
+      opacity: 0.5;
+    }
+  }
+
+ 
+}
+
+.logout-button {
+    background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  position: absolute;
+  top:9.8vh; /* Adjust the top position as needed */
+  right: 22vh; /* Position the logout button to the right */
+  outline: none;
+}
+
+
+/* Filter styling */
+
+/* GenreFilter.css */
+.genre-filter {
+  align-items: center;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 19vh;
+  right: 11.6vh;
+  margin-top: 20px;
+ 
+
+}
+
+.genre-filter.hidden {
+  display: none;
+}
+
+.genre-filter label {
+  font-family: sans-serif;
+  font-size: 16px;
+  margin-right: 10px;
+  font-weight: 400;
+}
+
+.genre-filter select {
+  background-color: #222;
+  color: #fff;
+  border: none;
+  padding: 10px 20px; 
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none; /* Remove the default outline */
+}
+
+/* Style for the dropdown arrow */
+.genre-filter select::-ms-expand {
+  display: none;
+}
+
+.genre-filter select {
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="white" height="12" width="10" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h20v20H0z" fill="none"/><path d="M10 14L5 9h10l-5 5z" fill="white"/></svg>');
+  background-position: right 10px top 50%;
+  background-repeat: no-repeat;
+}
+
+.result-area {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  margin-right: auto;
+  margin-left: 20px;
+  width: 90%;
+  height: 120%;
+  overflow-y: scroll;
+  position: relative;
+  bottom: 5vh;
+}
+
+
+.movie-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  align-self: center;
+}
+
+.movie-genre,
+.movie-year,
+.actors,
+.movie-plot,
+.movie-runtime {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+
+/* Footer styling */
+
+.footer{
+  margin-top: 50px;
+  bottom: 15vh;
+  position: relative;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  width: 100%;
+  left: 40vh;
+
+}
+
+.footer p {
+  
+  font-size: 14px;
+  color: #666;
+  
+}
+
+.footer a {
+  color: #3498db;
+}
+
+
+
+/* Responsive Styles  WORK IN PROGRESS UNFINISHED */
+  /* Responsive Styles */
+@media (max-width: 812px) {
+  .body {
+    flex-direction: column;
+    overflow-y: hidden;
+    display: flex;
+  }
+
+  .header {
+    margin-left: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .header h1 {
+    font-size: 20px;
+    
+  }
+
+  .container {
+  max-width: 20%; 
+  min-width: 72%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.poster {
+  min-width: 88%;
+  top: 20vh;
+  right: 10vh;
+
+}
+
+.poster img {
+  min-width: 88%;
+  align-items: center;
+ 
+}
+
+
+.button{ 
+  top: 65vh;
+  position: fixed;
+  right: 15vh;
+}
+
+.genre-filter {
+  top: 74vh;
+  right: 17.5vh;
+  position: fixed;
+}
+
+.content-left {
+  max-width: 20%;
+  min-width: 20%;
+  margin-left: 0;
+  margin-right: 0;
+  right: 35vh;
+  top: 50vh;
+  
+}
+}
